@@ -1,0 +1,5 @@
+# Requirements for Maze Solver
+
+numpy==1.19.4
+opencv-python==4.5.1.48
+Pillow==8.1.0
