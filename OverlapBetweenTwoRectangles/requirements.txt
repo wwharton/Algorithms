@@ -1,0 +1,3 @@
+# Requirements for Overlap Between Two Rectangles Script
+
+numpy==1.19.4
