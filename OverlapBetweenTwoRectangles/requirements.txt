@@ -1,3 +1,4 @@
 # Requirements for Overlap Between Two Rectangles Script
+# Or google the algorithm equation...
 
 numpy==1.19.4
