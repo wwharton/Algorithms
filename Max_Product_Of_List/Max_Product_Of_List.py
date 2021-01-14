@@ -25,10 +25,12 @@ def max_product(list_nums):
     return max(product_list)
 
 if __name__ == '__main__':
+    # first input
     size_of_list = int(input())
     list_nums = []
 
     for i in range(size_of_list):
+        # recurring inputs
         new_val = input()
         list_nums.append(new_val)
 
