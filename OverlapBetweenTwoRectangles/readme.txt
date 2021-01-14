@@ -65,7 +65,7 @@ it now looks like
  [0 0 1 1 1 1 1 1]]
  
 
-So nstead of starting at 20 20 and 21 21, now we start at 0, 0 and 1, 1
+So instead of starting at 20 20 and 21 21, now we start at 0, 0 and 1, 1
 or for examples where the two rectangles overlap leaving a gnomon deadspace in the negative y, x corner, for example
 3 4 4 4
 5 2 4 4

@@ -187,6 +187,9 @@ if __name__ == '__main__':
     # larger and larger rectangles being drawn, but it does however address the deadspace problem
     # so sometimes it will be more efficient!
 
+    # The problem can also be solved with a time complexity of O(1) using a formula easily derived from google...
+    # But this was more fun, and beautiful, and is straight from my brain.
+
 
 
 
