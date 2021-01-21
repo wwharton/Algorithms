@@ -3,9 +3,9 @@
 
 # take the list and return the highest possible product of three numbers from the list
 
-def max_product(list_nums):
+def max_product_bad(list_nums):
     product_list = []
-    # Buckle in for ugly time complexity.
+    # Ugly time complexity answer, but it's cool!
     # Loops will iterate through every index key
     for x in range(len(list_nums)):
         for y in range(len(list_nums)):
@@ -24,6 +24,12 @@ def max_product(list_nums):
     # And finally return the max product of the generated list
     return max(product_list)
 
+
+def max_product_good(list_nums):
+    list_nums.sort(reverse=True)
+    answer = list_nums[0] * list_nums[1] * list_nums[2]
+    return answer
+
 if __name__ == '__main__':
     # first input
     size_of_list = int(input())
@@ -32,7 +38,19 @@ if __name__ == '__main__':
     for i in range(size_of_list):
         # recurring inputs
         new_val = input()
-        list_nums.append(new_val)
+        list_nums.append(int(new_val))
 
-    answer = max_product(list_nums)
-    print(answer)
+    # So my first algo was cool, it works, but it has an awful time complexity.
+    # I made it unnecessarily complex, I realized later.
+    answer_complex = max_product_bad(list_nums)
+
+    # While driving in the car, I was thinking about the problem,
+    #   and had a light-bulb moment. I realized how dumb my original answer was.
+    answer_simple = max_product_good(list_nums)
+    print(answer_simple)
+
+    # In retrospect, the complex solution would be applicable if the problem were such that
+    #   I was attempting to find numbers whose product was an exact number - similar to the
+    #   numbers challenge in the British TV show Countdown.
+
+
