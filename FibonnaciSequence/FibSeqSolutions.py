@@ -143,8 +143,8 @@ def fib_tab_add(n):
                               tab[5] =         2
 
                               This final value of tab[5] is not correct yet, it must be iterated again to add the tab[4] value of 3
-                              This is a consequence of the loop structure, we must perform n + 2 calculations to solve for n
-                              But that constant is of little concern for Big Oh notation, we are still left of O(n)
+                              This is a consequence of the loop structure, we must perform 2(n + 1) calculations to solve for n
+                              But the constants are of little concern for Big Oh notation, we are still left of O(n)
 
     The continuing pattern, as each index is iterated over twice, 
         updates its value relative to the newly generated preceding and following values.
