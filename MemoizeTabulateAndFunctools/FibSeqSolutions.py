@@ -72,7 +72,7 @@ def fib_tab_sub(n):
 
 """
 Alternative to the above function which solves for N by looking back as it steps forward,
-we can plus equals
+    we can roll forward with plus equals sums, iterating over each index multiple times as we go:
 """
 
 
